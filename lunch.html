@@ -24,21 +24,21 @@
         <section id="soups">
             <h2>Выберите суп</h2>
             <div class="menu-grid">
-             
+                <!-- Блюда будут добавлены через JavaScript -->
             </div>
         </section>
 
         <section id="main-course">
             <h2>Выберите основное блюдо</h2>
             <div class="menu-grid">
-               
+                <!-- Блюда будут добавлены через JavaScript -->
             </div>
         </section>
 
         <section id="drinks">
             <h2>Выберите напиток</h2>
             <div class="menu-grid">
-                
+                <!-- Блюда будут добавлены через JavaScript -->
             </div>
         </section>
 
@@ -47,35 +47,12 @@
             <form method="POST" action="https://httpbin.org/post">
                 <div class="order-container">
                     <div class="your-order">
-                     
-                        
+                        <!-- Отображение выбранных блюд будет здесь -->
+                        <h3>Ваш заказ</h3>
                         <div class="order-form-elements">
-                            <h3>Оформление заказа</h3>
+                        
 
-                            <label for="soup-select">Суп</label>
-                            <select name="soup" id="soup-select" required>
-                                <option value="">-- Выберите суп --</option>
-                                <option value="borsch">Борщ</option>
-                                <option value="mushroom-soup">Грибной крем-суп</option>
-                                <option value="chicken-soup">Куриный суп</option>
-                            </select>
-
-                            <label for="main-select">Основное блюдо</label>
-                            <select name="main" id="main-select" required>
-                                <option value="">-- Выберите основное блюдо --</option>
-                                <option value="beef-stroganoff">Бефстроганов с гречкой</option>
-                                <option value="carbonara">Карбонара</option>
-                                <option value="chicken-cutlets">Куриные котлеты с пюре</option>
-                            </select>
-
-                            <label for="drink-select">Напиток</label>
-                            <select name="drink" id="drink-select" required>
-                                <option value="">-- Выберите напиток --</option>
-                                <option value="tea">Чай в ассортименте</option>
-                                <option value="milkshake">Молочный коктейль в ассортименте</option>
-                                <option value="lemonade">Лимонад в ассортименте</option>
-                            </select>
-
+            
                             <label for="comment">Комментарии к заказу</label>
                             <textarea id="comment" name="comment" rows="5"></textarea>
                         </div>
@@ -135,7 +112,7 @@
         <p>Время работы: Пн-Пт с 9:00 до 18:00</p>
     </footer>
 
-
+    <!-- Подключаем JavaScript файлы -->
     <script src="dishes.js"></script>
     <script src="displayDishes.js"></script>
     <script src="orderLogic.js"></script>
